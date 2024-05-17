@@ -79,7 +79,7 @@ function Log() {
               to={"/signin"}
             ></ButtonWarning>
           </div>
-          T
+          
         </div>
       </div>
     </>
