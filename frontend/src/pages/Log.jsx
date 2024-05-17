@@ -5,14 +5,15 @@ import Input from "../components/Input";
 import Button from "../components/Button";
 import ButtonWarning from "../components/ButtonWarning";
 import axios from "axios";
-import {useNaviagte} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
-function Signup() {
+
+function Log() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
- const navigate = useNaviagte();
+ const navigate = useNavigate()
   return (
     <>
       <div className="bg-slate-300 h-screen flex justify-center">
@@ -85,4 +86,4 @@ function Signup() {
   );
 }
 
-export default Signup;
+export default Log;
