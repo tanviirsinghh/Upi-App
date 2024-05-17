@@ -5,6 +5,7 @@ import SendMoney from './pages/SendMoney'
 import Dashboard from './pages/Dashboard'
 
 import Log from "./pages/Log"
+import Home from "./pages/Home"
 
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
 
     <BrowserRouter>
     <Routes>
+    <Route path='/' element={<Home/>}/>
+
     <Route path='/signup' element={<Log/>}/>
     <Route path='/signin' element={<Signin/>}/>   
       <Route path='/sendMoney' element={<SendMoney/>}/>
