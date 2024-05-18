@@ -9,7 +9,7 @@ import {useNavigate} from "react-router-dom"
     const [users, setUsers] = useState([]);
     const[filter, setFilter] = useState('')
     useEffect(() => {
-        axios.get("http://localhost:3000/api/v1/user/bulk?filter=" + filter)
+        axios.get("https://upi-app.onrender.com/api/v1/user/bulk?filter=" + filter)
         .then((response) =>{
             setUsers(response.data.user)
         })
